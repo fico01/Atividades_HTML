@@ -1,0 +1,65 @@
+body {
+    background-color: #6e6e6e;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    font-family: "Kings", cursive;
+    border: 2px solid #0a0a0a;
+    border-radius: 5px;
+    background-color: rgba(85, 85, 85, 0.8);
+    color: #ffffff;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 1);
+}
+
+main { /* estlizando o main para centralizar o conteúdo */
+    border: 2px solid #0a0a0a;
+    border-radius: 5px;
+    padding: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: rgba(85, 85, 85, 0.8);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 1);
+    border-style: groove;
+}
+
+section {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 20px;
+}
+
+img {
+    margin-right: 10px;
+    width: 400px;
+    height: 250px;
+}
+
+#mecanicas {
+    background-color: rgba(240, 240, 240, 0.67);
+    border: 2px solid #0a0a0a9f;
+    padding: 10px 0 10px 20px;/* top right bottom left */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 1);
+    border-style: double;
+}
+
+.resumo {
+    background-color: rgba(240, 240, 240, 0.67);
+    border: 2px solid #0a0a0a9f;
+    padding: 10px 0 10px 20px;/* top right bottom left */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 1);
+}
+
+a {
+    color: #aa6320;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #aa6320;
+}

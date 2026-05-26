@@ -41,15 +41,19 @@ main {
 
 
 .card {
-    border: 2px solid #0000008a;
+    border: 3px solid #0000008a;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
     border-radius: 10px;
+    background-color: #ffffff;
+    padding-bottom: 10px;
   }
     
 .card:hover {
-  transform: translateY(-6px);
+  transform: translateY(6px) scale(1.05);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation-name: animation;
+  animation-duration: 0.5s;
 }
 
 .card-title-blue {
@@ -59,8 +63,8 @@ main {
   font-size: 0.95rem;
   font-weight: bold;
   color: #2f00ff;
-  background-color: #f9f9f9;
-  border-bottom: 1px solid #ccc;
+  background-color: #ffffff;
+  border-bottom: 5px solid #2f00ff;
 }
 .card-title-green {
   justify-content: center;
@@ -69,8 +73,8 @@ main {
   font-size: 0.95rem;
   font-weight: bold;
   color: #0dff00;
-  background-color: #f9f9f9;
-  border-bottom: 1px solid #ccc;
+  background-color: #ffffff;
+  border-bottom: 5px solid #0dff00;
 }
 .card-title-yellow {
   justify-content: center;
@@ -79,8 +83,8 @@ main {
   font-size: 0.95rem;
   font-weight: bold;
   color: #ff9900;
-  background-color: #f9f9f9;
-  border-bottom: 1px solid #ccc;
+  background-color: #ffffff;
+  border-bottom: 5px solid #ff9900;
 }
 .card-title-pink {
   justify-content: center;
@@ -89,8 +93,8 @@ main {
   font-size: 0.95rem;
   font-weight: bold;
   color: #ff00f2;
-  background-color: #f9f9f9;
-  border-bottom: 1px solid #ccc;
+  background-color: #ffffff;
+  border-bottom: 5px solid #ff00f2;
 }
 
 .card-title-red {
@@ -100,8 +104,8 @@ main {
   font-size: 0.95rem;
   font-weight: bold;
   color: #ff0000;
-  background-color: #f9f9f9;
-  border-bottom: 1px solid #ccc;
+  background-color: #ffffff;
+  border-bottom: 5px solid #ff0000;
 }
 
 .card-image {
@@ -123,7 +127,7 @@ main {
   font-size: 0.85rem;
   color: #444;
   border-top: 5px solid #ff9900;
-  background-color: #fafafa;
+  background-color: #ffffff;
   line-height: 2;
 }
 
@@ -132,7 +136,7 @@ main {
   font-size: 0.85rem;
   color: #444;
   border-top: 5px solid #ff0000;
-  background-color: #fafafa;
+  background-color: #ffffff;
   line-height: 1.4;
 }
 .card-desc-blue {
@@ -140,7 +144,7 @@ main {
   font-size: 0.85rem;
   color: #444;
   border-top: 5px solid #2f00ff;
-  background-color: #fafafa;
+  background-color: #ffffff;
   line-height: 1.4;
 }
 .card-desc-pink {
@@ -148,7 +152,7 @@ main {
   font-size: 0.85rem;
   color: #444;
   border-top: 5px solid #ff00f2;
-  background-color: #fafafa;
+  background-color: #ffffff;
   line-height: 1.4;
 }
 .card-desc-green {
@@ -156,7 +160,21 @@ main {
   font-size: 0.85rem;
   color: #444;
   border-top: 5px solid #0dff00;
-  background-color: #fafafa;
+  background-color: #ffffff;
   line-height: 1.4;
 }
 
+@media (max-width: 600px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@keyframes animation {
+  from {
+    transform:rotate(0deg);
+  } 
+  to {
+    transform:rotate(360deg);
+  }
+}

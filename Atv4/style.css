@@ -1,0 +1,26 @@
+th {
+    background-color: orange;
+    color: white;
+    font-weight: bold;  
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    border-style: solid;
+    table-layout: fixed;
+}
+
+.momentoDia {
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+}
+
+table td,
+table th {
+    width: 150px;
+    height: 25px;
+}

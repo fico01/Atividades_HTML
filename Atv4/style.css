@@ -9,11 +9,12 @@ table {
     width: 50%;
     margin: 0 auto;
     text-align: center;
-    border-style: solid;
     table-layout: fixed;
+    border: 2px dashed black;
 }
 
 .momentoDia {
+    text-align: left;
     background-color: orange;
     color: white;
     font-weight: bold;
